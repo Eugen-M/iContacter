@@ -1,0 +1,39 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Rate Call Step 1
+
+block styles
+    
+block content 
+    section.rate-call
+        .rate-call__inner
+            .container 
+                .container__wrapper
+                    .rate-call__bar 
+                        .rate-call__bar-item
+                        .rate-call__bar-item.rate-call__bar-item--active 
+
+                    .rate-call__title Want to share your<br /> experience?
+
+                    .rate-call__text How would you rate <br />the quality of the service?
+
+                    .rate-call__rate    
+                        .rate-call__rate-row.rate-call__rate-row--not-active
+                            svg.rate-call__rate-star(data-count="5")
+                                use(href="../../assets/img/sprite.svg#favorites")
+                            svg.rate-call__rate-star(data-count="4")
+                                use(href="../../assets/img/sprite.svg#favorites")
+                            svg.rate-call__rate-star(data-count="3")
+                                use(href="../../assets/img/sprite.svg#favorites")
+                            svg.rate-call__rate-star(data-count="2")
+                                use(href="../../assets/img/sprite.svg#favorites")
+                            svg.rate-call__rate-star(data-count="1")
+                                use(href="../../assets/img/sprite.svg#favorites")
+                        .rate-call__rate-descr(style="display: none;") Good 4/5
+
+            .rate-call__footer 
+                .container 
+                    button.btn.btn--secondary(type="button")
+                        span.btn__label Share Review

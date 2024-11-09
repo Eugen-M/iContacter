@@ -1,0 +1,52 @@
+@import '../common/colors', '../common/mixins';
+
+.options-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+
+    &__btn {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__dropdown {
+        position: absolute;
+        right: 0;
+        background: $c-white;
+        top: 100%;
+        padding: 10px;
+        z-index: 10;
+        display: none;
+    }
+
+    &--active &__dropdown {
+        display: block;
+    }
+
+    &__item {
+        display: block;
+        margin: 0 0 10px;
+        font-size: 14px;
+        padding: 5px 0;
+        line-height: 1;
+        color: $c-black;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

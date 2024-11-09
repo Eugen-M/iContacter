@@ -1,0 +1,43 @@
+extends ../layout/main-inner
+include ../layout/mixins
+
+block title
+    | Search
+
+block styles
+    
+block content
+    .search-page
+        .container
+            .container__wrapper
+                form.search(method="get")
+                    .search__wrapper
+                        input.search__input(type="text" placeholder="Type company name")
+
+                        button.search__cancel(type="cancel")
+                            svg.search__cancel-icon
+                                use(href="../../assets/img/sprite.svg#cancel")
+                        button.search__btn(type="button")
+                            svg.btn__icon
+                                use(href="../../assets/img/sprite.svg#search")
+
+                    .search__section
+                        .search__section-header
+                            .search__section-title Companies
+
+                            +link-more("Show all results")
+
+                        +search-item("Swedbank")
+                        +search-item("Swedbank Latvia")
+                        +search-item("Swedbank Norge")
+                        +search-item("Swedbank Pay")
+
+                    .search__section
+                    .search__section-header
+                        .search__section-title Popular searches
+
+                    +search-item("Swedbank")
+                    +search-item("Luminor")
+                    +search-item("Citadele")
+                    +search-item("Bolt")
+                    +search-item("Bolt")

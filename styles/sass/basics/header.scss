@@ -1,0 +1,78 @@
+@import '../common/colors', '../common/mixins';
+
+.header {
+    border-bottom: 1px solid rgba($c-black, 0.12);
+    background-color: $c-white;
+
+    &--active {
+        background-color: $c-smoke;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        margin-right: 10px;
+        text-decoration: none;
+        color: $c-black;
+
+        &-icon {
+            width: 40px;
+            height: 40px;
+            @include border-radius(50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: $c-white;
+            margin: 0 12px 0 0;
+            background-color: $c-black;
+        }
+
+        &-title {
+            font-size: 18px;
+            line-height: 1.21;
+            font-weight: 700;
+        }
+    }
+
+    &__btn {
+        width: 48px;
+        height: 40px;
+        background-color: rgba($c-black, 0.04);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @include border-radius(50%);
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            display: block;
+            transition: $anim;
+
+            &--close {
+                display: none;
+            }
+        }
+
+        &--active &-icon--close {
+            display: block;
+        }
+
+        &--active &-icon--dots {
+            display: none;
+        }
+    }
+}

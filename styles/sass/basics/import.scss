@@ -1,0 +1,26 @@
+@import "../basics/default.scss";
+@import "../basics/buttons.scss";
+@import "../basics/header.scss";
+@import "../basics/footer.scss";
+
+/* home page */
+@import "../common/search.scss";
+@import "../common/recent-calls.scss";
+@import "../common/searched-company.scss";
+
+/* company profile page */
+@import "../common/subheader.scss";
+@import "../common/company-profile.scss";
+@import "../common/modal.scss";
+
+/* add custom dial */
+@import "../common/add-custom-dial.scss";
+@import "../common/select.scss";
+@import "../common/options-box.scss";
+
+/* sign up */
+@import "../common/sign-up.scss";
+
+/* rate call */
+@import "../common/rate-call.scss";
+

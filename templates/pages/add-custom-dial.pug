@@ -1,0 +1,32 @@
+extends ../layout/main-add-number
+include ../layout/mixins
+
+block title
+    | Add custom dial
+
+block styles
+    
+block content            
+    section.add-custom-dial
+        +subheader("Create custom fast-call")
+        .container
+            .container__wrapper
+                form.add-custom-dial__form(action="")
+                    .add-custom-dial__form-title Enter phone number
+
+                    .add-custom-dial__form-row 
+                        .select
+                            svg.select__icon
+                                use(href="../../assets/img/sprite.svg#chevron-down")
+                            select.select__box(id="sel")
+                                option(value="1") +371 
+                                option(value="2") +372
+                                option(value="3") +373
+                                option(value="4") +374
+
+                        input.add-custom-dial__form-input(type="number" id="1" placeholder="Phone number")
+
+                    .add-custom-dial__form-btns
+                        .container
+                            button.btn.btn--secondary(type="button" disabled)
+                                span.btn__label Add number

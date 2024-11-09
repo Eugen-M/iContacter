@@ -1,0 +1,36 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Favorites
+
+block styles
+    
+block content 
+    section.recent-calls
+        .container 
+            .container__wrapper
+                .recent-calls__title Favorites
+
+                .recent-calls__card
+                    .recent-calls__card-header 
+                        .recent-calls__card-title Swedbank
+
+                        +options-box
+
+                    .recent-calls__card-phone 
+                        .recent-calls__card-phone-num +371 674 4444
+
+                        .recent-calls__card-phone-item 2
+
+                        .recent-calls__card-phone-item 2
+
+                    .recent-calls__card-footer 
+                        .recent-calls__card-section Private Client
+
+                        .recent-calls__card-lang 
+                            .recent-calls__card-lang-icon 
+                                img(src="../../assets/img/english--lang--icon.png" alt="" class="recent-calls__card-lang-img")
+                            .recent-calls__card-lang-label English
+                
+                

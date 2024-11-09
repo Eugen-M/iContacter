@@ -1,0 +1,48 @@
+extends ../layout/main-add-number
+include ../layout/mixins
+
+block title
+    | Add custom dial
+
+block styles
+    
+block content            
+    section.add-custom-dial
+        +subheader("Create custom fast-call")
+        .container
+            form.container__wrapper(action="") 
+                .add-custom-dial__options
+                    .add-custom-dial__options-subtitle Fast-call sequence
+
+                    .add-custom-dial__options-step 
+                        .add-custom-dial__options-step-dot
+                        .add-custom-dial__options-step-content 
+                            .add-custom-dial__options-step-number +371 674 44444
+                        .add-custom-dial__options-step-column
+                            +options-box
+
+                    .add-custom-dial__options-step 
+                        .add-custom-dial__options-step-dot
+                        .add-custom-dial__options-step-content 
+                            .add-custom-dial__options-step-number 2
+                        .add-custom-dial__options-step-column
+                            +options-box
+
+                    .add-custom-dial__options-step 
+                        .add-custom-dial__options-step-dot
+                        .add-custom-dial__options-step-content 
+                            .add-custom-dial__text-box
+                                input.add-custom-dial__text-box-input(type="text" placeholder="Enter option")
+                                button.add-custom-dial__text-box-btn
+                                    svg.add-custom-dial__text-box-icon
+                                        use(href="../../assets/img/sprite.svg#dots")
+                        .add-custom-dial__options-step-column
+                            +options-box
+
+                .add-custom-dial__footer
+                    .container
+                        .add-custom-dial__footer-btns
+                            button.btn.btn--primary(type="cancel") Cancel
+
+                            button.btn.btn--secondary(type="button")
+                                span.btn__label Add

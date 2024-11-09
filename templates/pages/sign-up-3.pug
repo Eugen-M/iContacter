@@ -1,0 +1,36 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Sign Up
+
+block styles
+    
+block content 
+    section.sign-up
+        .sign-up__inner
+            form.container(action="")  
+                .sign-up__header
+                    a.sign-up__back(href="") 
+                        svg.sign-up__back-icon
+                            use(href="../assets/img/sprite.svg#chevron-left")
+                    .sign-up__title Finish logging in
+
+                .sign-up__text Once you enter the code we sent to doferson@gmail.com, you’ll be all logged in.
+
+                .sign-up__box 
+                    label.sign-up__box-label(for="code") Code
+                    input.sign-up__box-input(type="text" id="code" placeholder="Enter code")
+
+                    button.btn.btn--secondary(type="button")
+                        span.lds-ring
+                            span 
+                            span 
+                            span 
+                            span 
+
+                .sign-up__footer
+                    p Didn’t get the code? 
+                        a(href="") Resend code
+                    p 
+                        a(href="") Need help?

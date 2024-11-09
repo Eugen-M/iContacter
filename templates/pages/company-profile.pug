@@ -1,0 +1,139 @@
+extends ../layout/main-inner
+include ../layout/mixins
+
+block title
+    | Company Profile
+
+block styles
+    
+block content            
+    section.company-profile
+        +subheader("Company profile")
+        .container
+            .container__wrapper
+                .company-profile__tags
+                    a.company-profile__tags-section(href="") Banking
+                    a.company-profile__tags-country(href="") Latvia
+                
+                .company-profile__header
+                    .company-profile__header-left 
+                        .company-profile__title Swedbank Latvia
+                        .company-profile__date 
+                            span.company-profile__date-text Time saved on average 
+                            time.company-profile__date-time 24 min
+                    .company-profile__header-right
+                        .company-profile__rate 
+                            svg.company-profile__rate-icon 
+                                use(href="../../assets/img/sprite.svg#happy")
+                                .company-profile__rate-num 4.6
+
+                .company-profile__section
+                    .company-profile__section-subheader 
+                        .company-profile__section-title 
+                            | Languages
+                            span.company-profile__section-title-num (3)
+
+                    .company-profile__lang
+                        .company-profile__lang-item
+                            .company-profile__lang-icon 
+                            
+                            .company-profile__lang-label Latviešu
+
+                        .company-profile__lang-item
+                            .company-profile__lang-icon 
+                                img(src="../../assets/img/english--lang--icon.png" alt="" class="company-profile__lang-img")
+                            .company-profile__lang-label English
+
+                        .company-profile__lang-item
+                            .company-profile__lang-icon 
+                            
+                            .company-profile__lang-label Русский
+
+                .company-profile__section
+                .company-profile__section-subheader 
+                    .company-profile__section-title Fast calls
+
+                    +link-more("Show all")
+
+                .company-profile__call(data-modal="modal1") Card and access code blocking
+
+                .company-profile__call(data-modal="modal2") Personal banking
+
+                .company-profile__call(data-modal="modal3") Swedbank Insurance
+
+                .modal#modal1
+                    .modal__container
+                        .modal__header 
+                            .modal__header-title Swedbank
+                            button.modal__header-btn(type="button")
+                                use(href="../../assets/img/sprite.svg#close")
+
+                        .modal__content
+                            form.modal__card(method="get")
+                                .modal__card-header 
+                                    .modal__card-descr Phone call will reach
+                                    .modal__card-title Business Support
+
+                                    +favorites("")
+                                .modal__card-lang 
+                                    label.modal__card-lang-label(for="sel") Select language
+                                    .select
+                                        svg.select__icon
+                                            use(href="../../assets/img/sprite.svg#chevron-down")
+                                        select.select__box(id="sel")
+                                            option(value="1") Eng 
+                                            option(value="2") Ru 
+                                            option(value="3") Lv 
+                                            option(value="4") Lt 
+                                .modal__card-buttons 
+                                    a.btn.btn--secondary(href="")
+                                        svg.btn__icon 
+                                            use(href="../../assets/img/sprite.svg#call")
+
+                                        span.btn__label Call Now
+                                    a.btn.btn--primary(href="") Company profile
+
+                .modal#modal2
+                    .modal__container
+                        .modal__header 
+                            .modal__header-title Swedbank Latvia
+                            button.modal__header-btn(type="button")
+                                use(href="../../assets/img/sprite.svg#close")
+
+                        .modal__content
+                            form.modal__card(method="get")
+                                .modal__card-header 
+                                    .modal__card-descr Phone call will reach
+                                    .modal__card-title Card and access code blocking
+
+                                    +favorites("")
+                                .modal__card-lang 
+                                    label.modal__card-lang-label(for="sel") Select language
+                                    .select
+                                        svg.select__icon
+                                            use(href="../../assets/img/sprite.svg#chevron-down")
+                                        select.select__box(id="sel")
+                                            option(value="1") Eng 
+                                            option(value="2") Ru 
+                                            option(value="3") Lv 
+                                            option(value="4") Lt  
+                                .modal__card-buttons 
+                                    a.btn.btn--secondary(href="")
+                                        svg.btn__icon 
+                                            use(href="../../assets/img/sprite.svg#call")
+
+                                        span.btn__label Call Now
+
+                .modal.modal--gray#modal3
+                    .modal__container
+                        .modal__header 
+                            .modal__header-title Swedbank in English
+                            button.modal__header-btn(type="button")
+                                use(href="../../assets/img/sprite.svg#close")
+
+                        .modal__content
+                            a.modal__fast-call-item(href="") Card and access code blocking
+
+                            a.modal__fast-call-item(href="") Personal banking
+
+                            a.modal__fast-call-item(href="") Swedbank Insurance

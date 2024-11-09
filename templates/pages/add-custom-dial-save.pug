@@ -1,0 +1,58 @@
+extends ../layout/main-add-number
+include ../layout/mixins
+
+block title
+    | Add custom dial
+
+block styles
+    
+block content            
+    section.add-custom-dial
+        +subheader("Create custom fast-call")
+        .container
+            form.container__wrapper(action="") 
+                .add-custom-dial__save
+                    .add-custom-dial__title Save fast dial
+
+                    .add-custom-dial__phone
+                        svg.add-custom-dial__phone-icon
+                            use(href="../../assets/img/sprite.svg#call")
+                        .add-custom-dial__phone-box +371 674 4444
+                        .add-custom-dial__phone-item 2
+                        .add-custom-dial__phone-item 2
+
+                    .add-custom-dial__save-section
+                        .add-custom-dial__save-title Add description
+
+                        .add-custom-dial__save-item
+                            label.add-custom-dial__save-label(for="name") Company name
+                            .add-custom-dial__text-box
+                                input.add-custom-dial__text-box-input(type="text" id="name" placeholder="Company name")
+                                button.add-custom-dial__text-box-btn
+                                    svg.add-custom-dial__options-step-column-icon
+                                        use(href="../../assets/img/sprite.svg#dots")
+
+                        .add-custom-dial__save-item
+                            label.add-custom-dial__save-label(for="name") Category
+                            .add-custom-dial__text-box
+                                input.add-custom-dial__text-box-input(type="text" id="name" placeholder="Enter category")
+                                button.add-custom-dial__text-box-btn
+                                    svg.add-custom-dial__options-step-column-icon
+                                        use(href="../../assets/img/sprite.svg#dots")
+
+                        .add-custom-dial__save-item
+                            label.add-custom-dial__save-label(for="sel") Language
+                            .select
+                                svg.select__icon
+                                    use(href="../../assets/img/sprite.svg#chevron-down")
+                                select.select__box(id="sel")
+                                    option(value="1") English 
+                                    option(value="2") Russian
+
+                .add-custom-dial__footer
+                    .container
+                        .add-custom-dial__footer-btns
+                            button.btn.btn--primary(type="cancel") Cancel
+
+                            button.btn.btn--secondary(type="button")
+                                span.btn__label Save

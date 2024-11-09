@@ -1,0 +1,45 @@
+/* Placeholders */
+.options-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.options-box__btn {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.options-box__icon {
+  width: 24px;
+  height: 24px;
+}
+.options-box__dropdown {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  top: 100%;
+  padding: 10px;
+  z-index: 10;
+  display: none;
+}
+.options-box--active .options-box__dropdown {
+  display: block;
+}
+.options-box__item {
+  display: block;
+  margin: 0 0 10px;
+  font-size: 14px;
+  padding: 5px 0;
+  line-height: 1;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+.options-box__item:last-child {
+  margin: 0;
+}

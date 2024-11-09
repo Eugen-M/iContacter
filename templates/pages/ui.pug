@@ -1,0 +1,136 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | UI page
+
+block styles
+    
+block content
+    div(style="background: yellow;")
+        .container 
+            h1 Icons
+
+            .ui-wrapper
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#menu-dots")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#play")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#explore-ufo")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#favorites")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#chevron-left")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#happy")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#plus")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#search")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#search-icon")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#arrow-right")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#cancel")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#chevron-down")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#call")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#dots")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#plus")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#star")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#no")
+
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#like")
+
+        .container
+            h1 Buttons
+
+            a.btn.btn--secondary.btn--explore(href="")
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#play")
+                span.btn__label Explore iContacter
+
+            a.btn.btn--secondary.btn--explore(href="")
+                svg.btn__icon
+                    use(href="../../assets/img/sprite.svg#explore-ufo")
+                span.btn__label Explore iContacter
+
+            button.btn(type="button") btn
+            <br />
+            <br />
+            button.btn.btn--primary(type="button") btn primary
+            <br />
+            <br />
+            button.btn.btn--secondary(type="button") btn secondary
+            <br />
+            <br />
+            button.btn.btn--primary(type="button" disabled) btn primary disabled
+            <br />
+            <br />
+            button.btn.btn--secondary(type="button" disabled) btn secondary disabled
+            <br />
+            <br />
+
+        .container
+            h2 Elements
+
+            +favorites("") 
+
+            <br />
+            <br />
+
+            +searched-company("title", "text", "time")
+
+            <br />
+            <br />
+
+            +subheader("title")
+
+            <br />
+            <br />
+
+            +recent-call-card("title", "date", "section", "lang")
+
+            <br />
+            <br />
+
+            +recent-call-card-favorites("title", "section", "lang")
+
+            <br />
+            <br />
+
+            +link-more("label")
+
+            <br />
+            <br />
+
+            +search-item("name")
+
+            <br />
+            <br />
+
+            +options-box     

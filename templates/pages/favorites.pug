@@ -1,0 +1,19 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Favorites
+
+block styles
+    
+block content 
+    section.recent-calls
+        .container 
+            .container__wrapper
+                .recent-calls__title Favorites
+                
+                +recent-call-card-favorites("Swedbank", "Business Support", "English") 
+                
+                +recent-call-card-favorites("Citadele", "Insurance Department", "English") 
+                
+                +recent-call-card-favorites("Balticom", "Private Client", "English")

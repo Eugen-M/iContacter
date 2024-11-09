@@ -1,0 +1,40 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Rate Call Step 1
+
+block styles
+    
+block content 
+    section.rate-call
+        .rate-call__inner
+            .container 
+                .container__wrapper
+                    .rate-call__bar 
+                        .rate-call__bar-item.rate-call__bar-item--active 
+                        .rate-call__bar-item 
+
+                    .rate-call__title Want to share your<br /> experience?
+
+                    .rate-call__text Were you able to get through <br />to the bank's customer service quickly?
+
+                    .rate-call__voting
+                        .rate-call__voting-item
+                            .rate-call__voting-btn 
+                                svg.rate-call__rate-star
+                                    use(href="../../assets/img/sprite.svg#no")
+
+                            .rate-call__voting-label No
+
+                        .rate-call__voting-item
+                            .rate-call__voting-btn.rate-call__voting-btn--yes
+                                svg.rate-call__rate-star
+                                    use(href="../../assets/img/sprite.svg#like")
+
+                            .rate-call__voting-label Yes
+   
+            .rate-call__footer 
+                .container 
+                    button.btn.btn--secondary(type="button")
+                        span.btn__label Share Review

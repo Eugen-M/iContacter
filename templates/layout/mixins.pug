@@ -1,0 +1,84 @@
+//- favorites
+mixin favorites(subclass)
+    button.favorites(type="button" class="" + subclass)
+        svg.favorites-icon
+            use(href="../../assets/img/sprite.svg#favorites")
+
+//- searched-company
+mixin searched-company(title, text, time)
+    a.searched-company(href="")
+        span.searched-company__logo 
+
+        span.searched-company__column 
+            span.searched-company__title= title
+
+            span.searched-company__row 
+                span.searched-company__text= text
+                strong.searched-company__time= time
+
+//- subheader
+mixin subheader(title)
+    .subheader
+        a.subheader__btn(href="index.html")
+            svg.subheader__btn-icon
+                use(href="../../assets/img/sprite.svg#chevron-left")
+        .subheader__title= title
+
+//- recent-call-card
+mixin recent-call-card(title, date, section, lang)
+    .recent-calls__card
+        .recent-calls__card-header 
+            .recent-calls__card-title= title
+            time.recent-calls__card-date= date
+
+            +favorites("w--16")
+
+        .recent-calls__card-footer 
+            .recent-calls__card-section= section
+
+            .recent-calls__card-lang 
+                .recent-calls__card-lang-icon
+                    img(src="../../assets/img/english--lang--icon.png" alt="" class="recent-calls__card-lang-img")
+                .recent-calls__card-lang-label= lang
+
+//- recent-call-card-favorites
+mixin recent-call-card-favorites(title, section, lang)
+    .recent-calls__card
+        .recent-calls__card-header 
+            .recent-calls__card-title= title
+
+            +favorites("w--16")
+
+        .recent-calls__card-footer 
+            .recent-calls__card-section= section
+
+            .recent-calls__card-lang 
+                .recent-calls__card-lang-icon 
+                .recent-calls__card-lang-label= lang
+
+//- link-more
+mixin link-more(label)
+    a.link-more(href="") 
+        span.link-more__label= label
+        svg.link-more__icon
+            use(href="../../assets/img/sprite.svg#chevron-right")
+
+//- search-item
+mixin search-item(name)
+    a.search__section-item(href="")
+        span.search__section-item-logo 
+            img(src="../../assets/img/english--lang--icon.png" alt="" class="search__section-item-logo-img")
+        span.search__section-item-name= name
+
+//- options item
+mixin options-box
+    .options-box
+        span.options-box__btn
+            svg.options-box__icon
+                use(href="../../assets/img/sprite.svg#dots")
+        .options-box__dropdown 
+            span.options-box__item Edit 
+            span.options-box__item Delete
+
+
+

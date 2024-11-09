@@ -1,0 +1,33 @@
+@import '../common/colors', '../common/mixins';
+
+.select {
+    position: relative;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        margin-top: -12px;
+    }
+
+    &__box {
+        // A reset of styles, including removing the default dropdown arrow
+        appearance: none;
+        // Additional resets for further consistency
+        background-color: transparent;
+        border: none;
+        padding: 0 40px 0 12px;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        cursor: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: inherit;
+        color: $c-black;
+        height: 48px;
+        border: 1px solid rgba($c-black, 0.12);
+    }
+}

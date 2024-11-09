@@ -1,0 +1,36 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Sign Up
+
+block styles
+    
+block content 
+    section.sign-up
+        .sign-up__inner
+            form.container(action="")  
+                .sign-up__header
+                    .sign-up__title Log in or sign up in seconds
+
+                .sign-up__text Use your email or another service to continue with iContacter and it’s free!
+
+                .sign-up__box 
+                    label.sign-up__box-label(for="email") Email (personal or work)
+                    input.sign-up__box-input(type="text" id="email" placeholder="nice@example.com")
+
+                    button.btn.btn--secondary(type="button")
+                        span.btn__label Continue
+
+                .sign-up__or 
+                    .sign-up__or-text or
+                
+                .sign-up__buttons 
+                    button.btn.btn--primary(type="submit") Continue with Google
+                    button.btn.btn--primary(type="submit") Continue with Apple
+
+                .sign-up__footer
+                    p By continuing, you agree to iContacter<br />
+                        a(href="") Terms of Use. 
+                        | Read our
+                        a(href="") Privacy Policy.

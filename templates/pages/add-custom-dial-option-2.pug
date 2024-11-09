@@ -1,0 +1,51 @@
+extends ../layout/main-add-number
+include ../layout/mixins
+
+block title
+    | Add custom dial
+
+block styles
+    
+block content            
+    section.add-custom-dial
+        +subheader("Create custom fast-call")
+        .container
+            form.container__wrapper(action="") 
+                .add-custom-dial__options
+                    .add-custom-dial__options-subtitle Fast-call sequence
+
+                    .add-custom-dial__options-step 
+                        .add-custom-dial__options-step-dot
+                        .add-custom-dial__options-step-content 
+                            .add-custom-dial__options-step-number +371 674 44444
+                        .add-custom-dial__options-step-column
+                            +options-box
+
+                    .add-custom-dial__options-step 
+                        .add-custom-dial__options-step-dot
+                        .add-custom-dial__options-step-content 
+                            .add-custom-dial__options-step-number 2
+                        .add-custom-dial__options-step-column
+                            +options-box
+
+                    .add-custom-dial__options-step 
+                        .add-custom-dial__options-step-dot
+                        .add-custom-dial__options-step-content 
+                            span.btn.btn--primary 
+                                svg.btn__icon
+                                    use(href="../../assets/img/sprite.svg#plus")
+                                span.btn__label Add option
+
+                .add-custom-dial__footer
+                    .container
+                        .add-custom-dial__phone
+                            svg.add-custom-dial__phone-icon
+                                use(href="../../assets/img/sprite.svg#call")
+                            .add-custom-dial__phone-box +371 674 4444
+                            .add-custom-dial__phone-item 2
+                            .add-custom-dial__phone-item 2
+                        .add-custom-dial__footer-btns
+                            button.btn.btn--primary(type="cancel") Discard
+
+                            button.btn.btn--secondary(type="button")
+                                span.btn__label Save

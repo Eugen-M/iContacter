@@ -1,0 +1,110 @@
+@import '../common/colors', '../common/mixins';
+
+.footer {
+    position: relative;
+    flex-shrink: 0;
+    background: $c-white;
+    padding: 0 0 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid rgba($c-black, 0.12);
+    z-index: 100;
+
+    &__navi {
+        max-width: 800px;
+        margin: 0 auto;
+        
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        &-item {
+            position: relative;
+
+            &:nth-child(2) {
+                margin-right: 20px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 20px;
+            }
+        }
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        &-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.52;
+            color: $c-black;
+            font-weight: 400;
+            min-width: 70px;
+            margin: 0 5px;
+            padding: 20px 5px 0;
+        }
+
+        &-label {
+            display: block;
+            text-align: center;
+            padding: 5px;
+        }
+
+        &-item--active &-link {
+            opacity: 1;
+            font-weight: 600;
+        }
+
+        &-item--active &-icon {
+            fill: $c-smoke;
+        }
+
+        &-item--active &-label {
+            &::before {
+                content: "";
+                position: absolute;
+                top: -44px;
+                left: 0;
+                right: 0;
+                height: 2px;
+                background-color: $c-black;
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include border-radius(50%);
+        width: 52px;
+        height: 52px;
+        background-color: $c-black;
+        left: 50%;
+        top: -26px;
+        margin-left: -26px;
+        cursor: pointer;
+
+        &-icon {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}

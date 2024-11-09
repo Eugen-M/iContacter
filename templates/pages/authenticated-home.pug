@@ -1,0 +1,25 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Authenticated home
+
+block styles
+    
+block content 
+    .container
+        .container__wrapper
+            section.recent-calls 
+                .recent-calls__title Your recent calls
+
+                +recent-call-card("Swedbank", "Today, 12:55", "Business Support", "English")
+      
+            section.most-searched
+                .most-searched__title These companies contacts are most searched
+
+                +searched-company("Swedbank Latvia", "Time saved on average ", "24 min")
+
+                +searched-company("Swedbank Latvia", "Time saved on average ", "24 min")
+
+                +searched-company("Swedbank Latvia", "Time saved on average ", "24 min")
+        

@@ -1,0 +1,67 @@
+/* Placeholders */
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+}
+.header--active {
+  background-color: #EFEFEF;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+.header__logo-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 12px 0 0;
+  background-color: #000;
+}
+.header__logo-title {
+  font-size: 18px;
+  line-height: 1.21;
+  font-weight: 700;
+}
+.header__btn {
+  width: 48px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.header__btn-icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  transition: 0.2s ease;
+}
+.header__btn-icon--close {
+  display: none;
+}
+.header__btn--active .header__btn-icon--close {
+  display: block;
+}
+.header__btn--active .header__btn-icon--dots {
+  display: none;
+}

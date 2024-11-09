@@ -1,0 +1,14 @@
+include ../layout/mixins
+
+header.header
+    .container
+        .header__wrapper
+            a.header__logo(href="index.html")
+                span.header__logo-icon #
+                span.header__logo-name iContacter
+
+            .header__btn
+                svg.header__btn-icon.header__btn-icon--dots
+                    use(href="../assets/img/sprite.svg#menu-dots")
+                svg.header__btn-icon.header__btn-icon--close
+                    use(href="../assets/img/sprite.svg#menu-cancel")

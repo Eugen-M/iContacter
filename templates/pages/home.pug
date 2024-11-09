@@ -1,0 +1,33 @@
+extends ../layout/main
+include ../layout/mixins
+
+block title
+    | Home
+
+block styles
+    
+block content 
+    .container.container--white
+        .container__wrapper
+            .container__title Find companies support contact numbers to save time pushing buttons
+
+            a.search__link(href="search.html")
+                svg.search__link-icon
+                    use(href="../../assets/img/sprite.svg#search-icon")
+                span.search__link-label Search company
+
+    a.btn.btn--secondary.btn--explore(href="")
+        svg.btn__icon
+            use(href="../../assets/img/sprite.svg#play")
+        span.btn__label Explore iContacter
+        
+    .container
+        .container__wrapper
+            section.most-searched
+                .most-searched__title These companies contacts are most searched
+
+                +searched-company("Swedbank Latvia", "Time saved on average ", "24 min")
+
+                +searched-company("Swedbank Latvia", "Time saved on average ", "24 min")
+
+                +searched-company("Swedbank Latvia", "Time saved on average ", "24 min")

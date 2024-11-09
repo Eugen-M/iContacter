@@ -1,0 +1,317 @@
+/* Placeholders */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  line-height: 1.3;
+  font-family: "Inter", Arial, Helvetica Neue, Helvetica, sans-serif;
+  background: #EFEFEF;
+  font-size: 1.125em;
+  margin: 0;
+  color: #000;
+}
+
+button,
+input,
+select,
+textarea {
+  outline: none;
+  font-family: "Inter", Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1.125em;
+}
+
+input,
+select,
+textarea {
+  font-weight: 300;
+}
+
+select:-moz-focusring {
+  text-shadow: 0 0 0 #000;
+  color: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+  color: #000;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+}
+a.link-disabled {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+svg {
+  display: block;
+}
+
+dl,
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.text-styles {
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 20px 0 10px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0;
+  font-weight: bold;
+}
+
+.table-wrapper {
+  border: 3px solid #000;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+
+.img-fluid {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.main {
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  display: -ms-flexbox;
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+.content {
+  padding-bottom: 200px;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container__wrapper {
+  padding: 20px 0 0;
+}
+.container__title {
+  margin: 0 0 24px;
+  font-size: 24px;
+  line-height: 1.24;
+  color: #000;
+  font-weight: 700;
+}
+
+.position-relative {
+  position: relative;
+}
+
+svg {
+  background: gray;
+}
+
+.ui-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: gray;
+  flex-wrap: wrap;
+}
+.ui-wrapper svg {
+  flex-shrink: 0;
+}
+
+.js-body--overflow {
+  overflow: hidden;
+}
+
+.most-searched {
+  margin: 0 0 20px;
+}
+.most-searched__title {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #000;
+  font-weight: 700;
+}
+
+.favorites {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.favorites-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.favorites--w16 {
+  width: 16px;
+  height: 16px;
+}
+.favorites--w16 .favorites-icon {
+  width: 16px;
+  height: 16px;
+}
+.favorites--active .favorites-icon {
+  background: red;
+}
+
+.link-more {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.link-more__icon {
+  width: 4px;
+  height: 8px;
+  flex-shrink: 0;
+}
+.link-more__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #000;
+  margin-right: 8px;
+}
+
+.lds-ring {
+  box-sizing: border-box;
+  position: relative;
+}
+.lds-ring::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.32);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  margin: -10px 0 0 -10px;
+}
+.lds-ring span {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring span:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring span:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring span:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

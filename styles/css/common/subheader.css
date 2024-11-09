@@ -1,0 +1,36 @@
+/* Placeholders */
+.subheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 18px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.subheader-title {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.24;
+  color: #000;
+}
+.subheader__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  margin-top: -12px;
+}
+.subheader__btn-icon {
+  width: 24px;
+  height: 24px;
+}
