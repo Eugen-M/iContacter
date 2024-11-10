@@ -193,9 +193,9 @@ th {
     position: relative;
 }
 
-svg {
-    background: gray;
-}
+// svg {
+//     background: gray;
+// }
 
 .ui {
     &-wrapper {
@@ -240,6 +240,7 @@ svg {
         height: 24px;
         flex-shrink: 0;
         cursor: pointer;
+        stroke: $c-black;
     }
 
     &--w16 {
@@ -253,7 +254,7 @@ svg {
     }
 
     &--active &-icon {
-        background: red;
+        fill: $c-black;
     }
 }
 

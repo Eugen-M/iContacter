@@ -3,6 +3,8 @@
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -187,10 +189,6 @@ th {
   position: relative;
 }
 
-svg {
-  background: gray;
-}
-
 .ui-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -230,6 +228,7 @@ svg {
   height: 24px;
   flex-shrink: 0;
   cursor: pointer;
+  stroke: #000;
 }
 .favorites--w16 {
   width: 16px;
@@ -240,7 +239,7 @@ svg {
   height: 16px;
 }
 .favorites--active .favorites-icon {
-  background: red;
+  fill: #000;
 }
 
 .link-more {
@@ -275,6 +274,8 @@ svg {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   margin: -10px 0 0 -10px;
 }
@@ -286,6 +287,8 @@ svg {
   height: 20px;
   margin: 2px;
   border: 2px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
@@ -330,9 +333,7 @@ svg {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   line-height: 1.1;
   transition: 0.2s ease;
 }
@@ -409,6 +410,8 @@ svg {
 .header__logo-icon {
   width: 40px;
   height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -432,6 +435,8 @@ svg {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .header__btn-icon {
@@ -531,6 +536,8 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   width: 52px;
   height: 52px;
@@ -683,6 +690,8 @@ svg {
   width: 24px;
   height: 24px;
   overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   position: relative;
   flex-shrink: 0;
@@ -692,8 +701,9 @@ svg {
 .search__section-item-logo-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .search__section-item-name {
@@ -771,12 +781,13 @@ svg {
   width: 24px;
   height: 24px;
   background-color: #EFEFEF;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   margin-right: 8px;
 }
 .recent-calls__card-lang-img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -828,6 +839,8 @@ svg {
   width: 40px;
   height: 40px;
   overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   position: relative;
   flex-shrink: 0;
@@ -837,8 +850,7 @@ svg {
 .searched-company__logo-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .searched-company__title {
   font-weight: 600;
@@ -916,6 +928,8 @@ svg {
   color: #000;
   padding: 8px 12px;
   background-color: rgba(0, 0, 0, 0.08);
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -1013,6 +1027,8 @@ svg {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #fff;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
   border-radius: 100px;
   padding: 12px 24px 12px 12px;
   margin: 0 8px 8px 0;
@@ -1020,6 +1036,8 @@ svg {
 .company-profile__lang-icon {
   width: 24px;
   height: 24px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   background-color: #000;
   flex-shrink: 0;
@@ -1028,8 +1046,7 @@ svg {
 .company-profile__lang-img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .company-profile__lang-label {
   font-size: 16px;
@@ -1251,6 +1268,8 @@ svg {
   width: 12px;
   height: 12px;
   margin-top: -6px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   border: 1px solid #000;
   background-color: #EFEFEF;
@@ -1264,6 +1283,8 @@ svg {
   width: 4px;
   height: 4px;
   margin: -2px 0 0 -2px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
 }
 .add-custom-dial__options-step-dot:after {
@@ -1457,9 +1478,7 @@ svg {
   margin-top: -12px;
 }
 .select__box {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: none;
   padding: 0 40px 0 12px;
@@ -1703,6 +1722,7 @@ svg {
 }
 .rate-call__inner > .container {
   flex: 1 0 auto;
+  width: 100%;
 }
 .rate-call__title {
   font-size: 24px;
@@ -1729,6 +1749,8 @@ svg {
 .rate-call__bar-item {
   width: calc(50% - 6px);
   background-color: #D9D9D9;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
   border-radius: 100px;
   height: 4px;
 }
@@ -1751,21 +1773,25 @@ svg {
   margin: 0 12px;
   flex-shrink: 0;
   transition: 0.2s ease;
+  stroke: #000;
 }
 .rate-call__rate-star[data-count="1"]:hover {
-  background: red;
+  fill: #000;
 }
 .rate-call__rate-star[data-count="2"]:hover ~ .rate-call__rate-star, .rate-call__rate-star[data-count="2"]:hover {
-  background: red;
+  fill: #000;
 }
 .rate-call__rate-star[data-count="3"]:hover ~ .rate-call__rate-star, .rate-call__rate-star[data-count="3"]:hover {
-  background: red;
+  fill: #000;
 }
 .rate-call__rate-star[data-count="4"]:hover ~ .rate-call__rate-star, .rate-call__rate-star[data-count="4"]:hover {
-  background: red;
+  fill: #000;
 }
 .rate-call__rate-star[data-count="5"]:hover ~ .rate-call__rate-star, .rate-call__rate-star[data-count="5"]:hover {
-  background: red;
+  fill: #000;
+}
+.rate-call__rate-star--active {
+  fill: #000;
 }
 .rate-call__rate-descr {
   font-size: 16px;
@@ -1786,6 +1812,8 @@ svg {
 .rate-call__voting-btn {
   width: 72px;
   height: 72px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   display: flex;
   justify-content: center;

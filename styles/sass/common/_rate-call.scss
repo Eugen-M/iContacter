@@ -20,8 +20,9 @@
         display: flex;
         flex-direction: column;
 
-        & > .container {
+        &>.container {
             flex: 1 0 auto;
+            width: 100%;
         }
     }
 
@@ -78,29 +79,34 @@
             margin: 0 12px;
             flex-shrink: 0;
             transition: $anim;
+            stroke: $c-black;
 
             &[data-count="1"]:hover {
-                background: red;
+                fill: $c-black;
             }
 
-            &[data-count="2"]:hover ~ &,
+            &[data-count="2"]:hover~&,
             &[data-count="2"]:hover {
-                background: red;
+                fill: $c-black;
             }
-            
-            &[data-count="3"]:hover ~ &,
+
+            &[data-count="3"]:hover~&,
             &[data-count="3"]:hover {
-                background: red;
+                fill: $c-black;
             }
 
-            &[data-count="4"]:hover ~ &,
+            &[data-count="4"]:hover~&,
             &[data-count="4"]:hover {
-                background: red;
+                fill: $c-black;
             }
 
-            &[data-count="5"]:hover ~ &,
+            &[data-count="5"]:hover~&,
             &[data-count="5"]:hover {
-                background: red;
+                fill: $c-black;
+            }
+
+            &--active {
+                fill: $c-black;
             }
         }
 
