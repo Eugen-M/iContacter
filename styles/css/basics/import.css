@@ -222,6 +222,9 @@ th {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
+  cursor: pointer;
+  background: none;
 }
 .favorites-icon {
   width: 24px;
@@ -514,6 +517,7 @@ th {
   display: block;
   text-align: center;
   padding: 5px;
+  position: relative;
 }
 .footer__navi-item--active .footer__navi-link {
   opacity: 1;
@@ -525,7 +529,7 @@ th {
 .footer__navi-item--active .footer__navi-label::before {
   content: "";
   position: absolute;
-  top: -44px;
+  top: -45px;
   left: 0;
   right: 0;
   height: 2px;
@@ -1110,7 +1114,7 @@ th {
   margin-top: -12px;
   cursor: pointer;
   border: none;
-  background-color: none;
+  background: none;
 }
 .modal__header-btn-svg {
   width: 24px;
@@ -1496,7 +1500,7 @@ th {
 
 /* Placeholders */
 .options-box {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;

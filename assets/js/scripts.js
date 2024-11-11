@@ -32,7 +32,7 @@ const stars = document.querySelectorAll(".favorites");
 
 for (let n = 0; n < stars.length; n++) {
   stars[n].addEventListener("click", function () {
-    this.parentElement.classList.toggle("favorites--active");
+    this.classList.toggle("favorites--active");
   });
 }
 

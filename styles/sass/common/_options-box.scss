@@ -1,7 +1,7 @@
 @import '../common/colors', '../common/mixins';
 
 .options-box {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     position: relative;
