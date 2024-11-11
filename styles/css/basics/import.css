@@ -500,6 +500,7 @@ th {
   display: block;
   margin: 0 auto;
   stroke: #000;
+  fill: none;
 }
 .footer__navi-link {
   display: flex;
