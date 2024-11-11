@@ -47,9 +47,10 @@ if(optionBox) {
   }
 
   window.addEventListener("click", (event) => {
-    optionBox.forEach((item) => {
-      if (event.target === item) {
-        item.classList.remove("options-box--active");
+    optionBox.forEach((btn) => {
+      const parent = btn.parentElement;
+      if (!parent.contains(event.target)) {
+        parent.classList.remove("options-box--active");
       }
     });
   });

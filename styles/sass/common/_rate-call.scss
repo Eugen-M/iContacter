@@ -80,6 +80,7 @@
             flex-shrink: 0;
             transition: $anim;
             stroke: $c-black;
+            cursor: pointer;
 
             &[data-count="1"]:hover {
                 fill: $c-black;
@@ -107,6 +108,7 @@
 
             &--active {
                 fill: $c-black;
+                cursor: default;
             }
         }
 

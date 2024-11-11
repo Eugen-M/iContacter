@@ -232,6 +232,7 @@ th {
   flex-shrink: 0;
   cursor: pointer;
   stroke: #000;
+  fill: none;
 }
 .favorites--w16 {
   width: 16px;
@@ -1116,9 +1117,10 @@ th {
   border: none;
   background: none;
 }
-.modal__header-btn-svg {
+.modal__header-btn-icon {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
 }
 .modal__content {
   padding: 20px;
@@ -1778,6 +1780,7 @@ th {
   flex-shrink: 0;
   transition: 0.2s ease;
   stroke: #000;
+  cursor: pointer;
 }
 .rate-call__rate-star[data-count="1"]:hover {
   fill: #000;
@@ -1796,6 +1799,7 @@ th {
 }
 .rate-call__rate-star--active {
   fill: #000;
+  cursor: default;
 }
 .rate-call__rate-descr {
   font-size: 16px;
