@@ -80,6 +80,7 @@
             flex-shrink: 0;
             transition: $anim;
             stroke: $c-black;
+            fill: none;
             cursor: pointer;
 
             &[data-count="1"]:hover {

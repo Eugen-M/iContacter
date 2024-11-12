@@ -1783,6 +1783,7 @@ th {
   flex-shrink: 0;
   transition: 0.2s ease;
   stroke: #000;
+  fill: none;
   cursor: pointer;
 }
 .rate-call__rate-star[data-count="1"]:hover {
